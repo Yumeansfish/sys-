@@ -119,6 +119,10 @@ void	program_realloc(int idx)
 	new_program = realloc(program, new_capacity * sizeof(struct instruction));
 	if (!new_program)
 		error("fail in realloc program");
+	//reset all fields of new programs to zero
+	for(int i =program_capacity;i<new_capacity;i++){
+		memset(&new_program[i],0,sizeof(struct instruction));
+	}
 	program = new_program;
 	program_capacity = new_capacity;
 }
