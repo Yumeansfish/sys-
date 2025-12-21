@@ -224,6 +224,17 @@ void	add_label(char *line, int instruction_idx)
 	// check whether the name length satisfied(delete:)
 	if (len > MAX_LABEL_NAME_LENGTH + 1)
 		error("so long label");
+	//check whether exist duplicate labels
+	//? shouldnt exist it because for example goto loop has two loop
+	//then dont know which to goto
+	char tmp[MAX_LABEL_NAME_LENGTH+1];
+	memcpy(tmp,line,len-1);
+	tmp[len-1] = '\0';
+	for (int i = 0; i < label_count; i++)
+	{
+		if (strcmp(label_table[i].name, tmp) == 0 )
+			error("duplicate label");
+	}
 	// check whether counts of label satisfied
 	if (label_count >= label_capacity)
 		label_realloc(label_count);
@@ -761,5 +772,9 @@ int	main(int argc, char *argv[])
 	}
 	load_program(argv[1]);
 	execute_program();
+	//clean up heap
+	if(program)free(program);
+	if(label_table)free(label_table);
+	if(memory)free(memory);
 	return (0);
 }
