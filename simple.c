@@ -8,7 +8,6 @@
 #define MAX_LABEL_NAME_LENGTH 50
 #define MAX_LINE_LENGTH 1024
 #define DELIM " \t"
-#define DONTVALIDATE 10
 
 // enum
 typedef enum
@@ -95,13 +94,12 @@ static int					program_capacity = 0;
 static struct label			*label_table = NULL;
 static int					label_capacity = 0;
 
-//counter
+// counter
 int							label_count = 0;
 int							program_size = 0;
 
-//tokenizer buf
+// tokenizer buf
 static char					tokenize_buf[MAX_LINE_LENGTH];
-
 
 // error handling
 void	error(const char *error)
@@ -119,9 +117,10 @@ void	program_realloc(int idx)
 	new_program = realloc(program, new_capacity * sizeof(struct instruction));
 	if (!new_program)
 		error("fail in realloc program");
-	//reset all fields of new programs to zero
-	for(int i =program_capacity;i<new_capacity;i++){
-		memset(&new_program[i],0,sizeof(struct instruction));
+	// reset all fields of new programs to zero
+	for (int i = program_capacity; i < new_capacity; i++)
+	{
+		memset(&new_program[i], 0, sizeof(struct instruction));
 	}
 	program = new_program;
 	program_capacity = new_capacity;
@@ -322,11 +321,8 @@ int	find_label(char *label)
 // this function is responsible for:
 // 1.copy the line into tokenize_buf
 // 2.divie tokens
-// 3.validating , if error ,exit
-// 4.return the tokens amounts
-// if needed_tokens = DONTVALIDATE , then dont need do validation
-// because assign has op or no-op,they have different needed tokens
-int	tokenizer(char *line, char **tokens, int needed_tokens)
+// 3.return the tokens amounts
+int	tokenizer(char *line, char **tokens, int max_tokens)
 {
 	char	*token;
 	int		count;
@@ -334,19 +330,21 @@ int	tokenizer(char *line, char **tokens, int needed_tokens)
 	strcpy(tokenize_buf, line);
 	count = 0;
 	token = strtok(tokenize_buf, DELIM);
-	while (token != NULL && count < needed_tokens)
+	while (token != NULL && count < max_tokens)
 	{
-		// if meet null before needed_tokens,then its so less
 		tokens[count++] = token;
 		token = strtok(NULL, DELIM);
 	}
-	// if not == needed tokens then its so less
-	if (count != needed_tokens && needed_tokens != DONTVALIDATE)
-		error("token so less");
-	// still have tokens, then token amounts overflow
 	if (token != NULL)
 		error("token so much");
 	return (count);
+}
+
+//validate whether actual tokens=needed_tokens
+void tokenizer_validate_version(char*line,char **tokens,int needed_tokens){
+	int count = tokenizer(line,tokens,needed_tokens);
+	if(count != needed_tokens)
+	error("invalid token amunts");
 }
 
 // helper function for parse operand
@@ -389,7 +387,7 @@ void	parse_goto(char *line, struct instruction *ins)
 {
 	char	*tokens[2];
 
-	tokenizer(line, tokens, 2);
+	tokenizer_validate_version(line, tokens, 2);
 	// format:
 	// token[0]:goto
 	// token[1]:label
@@ -401,7 +399,7 @@ void	parse_if(char *line, struct instruction *ins)
 {
 	char	*tokens[3];
 
-	tokenizer(line, tokens, 3);
+	tokenizer_validate_version(line, tokens, 3);
 	// format:
 	// token[0] = if
 	// token[1] = first oper
@@ -416,7 +414,7 @@ void	parse_input(char *line, struct instruction *ins)
 {
 	char	*tokens[3];
 
-	tokenizer(line, tokens, 3);
+	tokenizer_validate_version(line, tokens, 3);
 	// format:
 	// token[0] = input
 	// token[1] = dest oper
@@ -431,7 +429,7 @@ void	parse_output(char *line, struct instruction *ins)
 {
 	char	*tokens[2];
 
-	tokenizer(line, tokens, 2);
+	tokenizer_validate_version(line, tokens, 2);
 	ins->type = INS_OUTPUT;
 	// format:
 	// token[0] = output
@@ -457,7 +455,7 @@ void	parse_assign(char *line, struct instruction *ins)
 	int		count;
 
 	// use tokenizer to differient whether it has op
-	count = tokenizer(line, tokens, DONTVALIDATE);
+	count = tokenizer(line, tokens, 5);
 	if (count == 3)
 	{
 		if (strcmp(tokens[1], "=") != 0)
@@ -586,7 +584,6 @@ void	mem_realloc(int addr)
 	memory_capacity = new_capacity;
 }
 
-
 // execute part
 int	get_value(struct operand *oper)
 {
@@ -710,13 +707,9 @@ void	execute_input(struct instruction *ins)
 		write_value(&ins->dest, value);
 		write_value(&ins->first, 0);
 	}
-	else if (r == EOF)
-	{
-		write_value(&ins->first, 1);
-	}
 	else
 	{
-		error("invalid input");
+		write_value(&ins->first, 1);
 	}
 }
 
