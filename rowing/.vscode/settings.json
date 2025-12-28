@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "**/tests/[0-9]*_*[!.cc|!.h]": true,
+        "**/*.dSYM": true
+    },
+    "search.exclude": {
+        "**/tests/[0-9]*_*[!.cc|!.h]": true,
+        "**/*.dSYM": true
+    },
+    "terminal.integrated.autoReplies": {
+        "tests/([0-9]+_[a-z_]+)": "tests/$1.cc"
+    },
+    "files.associations": {
+        "**/tests/[0-9]*_*": "cpp"
+    }
+}

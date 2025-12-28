@@ -1,0 +1,7 @@
+#!/bin/bash
+# Quick test runner that shows source file path
+TEST_PATH="$1"
+TEST_NAME=$(basename "$TEST_PATH")
+echo "📄 Source: tests/${TEST_NAME}.cc"
+echo ""
+"$TEST_PATH"
