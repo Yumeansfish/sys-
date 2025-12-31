@@ -1,0 +1,39 @@
+Exercise 62. (50’) In a source file iterator.c write an implementation of the structures and func-
+tions declared in the following header file:
+struct iterator;
+struct sequence {
+const char * begin;
+const char * end;
+};
+struct iterator * create_iterator();
+void destroy_iterator(struct iterator *);
+int set_text(struct iterator *, const struct sequence *);
+int set_separators(struct iterator *, const struct sequence *);
+int get_next(struct iterator *, struct sequence *);
+A struct iterator object represents an iteration over a sequence of strings defined by a sequence
+of characters T (“text”) and a sequence of characters S (“separators”). All the characters in S are
+considered separators, while all other characters are considered string characters. Together, T and
+S define a sequence of strings x1, x2, . . ., where each string xi is a maximal contiguous subsequence
+of T made of string characters (i.e., characters not in S). For example, if T = abcdefghijk and
+S = ciao, then the sequence consists of the three strings x1 = b, x2 = defgh, and x3 = jk. Notice
+that the sequence might be empty, for example if T is itself empty or if T contains only separator
+characters. For example, the sequence is empty with T = ciaoaoao and S = ciao.
+A struct sequence object represents a sequence of characters. As usual, begin points to the start
+of the sequence and end points one past the end of the sequence.
+create_iterator() creates an iterator object. Return a valid pointer to a new iterator. Return the
+null pointer if memory is exhausted and therefore the creation of a new iterator object fails. For
+the new iterator, the default value of T is an empty sequence, and the default value of S is “,;”
+(comma and semicolon).
+destroy_iterator(i) destroys the given iterator object and releases all its allocated resources.
+set_text(i,T) uses the given sequence T of characters as text to start a new iteration for iterator i.
+This cancels any previous iteration on i. The set of strings is determined by T together with the
+current set of separators set by the most recent call to set_separators on i, or with the default ones
+if set_separators was never called on i. The given text T is owned by the caller. The iterator must
+not rely on the given text after this function returns. Return 1 on success, or 0 on failure.
+set_separators(i,S) assigns the given set S as separators for iterator i. This setting will take effect
+as soon as a new sequence is defined using set_text. The given sequence S is owned by the caller.
+Therefore, the iterator i must not rely on that sequence after this function returns. Return 1 on
+success, or 0 on failure.
+get_next(i,X) return the next string in i’s current iteration. The string is returned through the
+sequence object X, in which case the return value is 1. Otherwise, if the iteration has ended or was
+anyway empty, the return value is 0.
