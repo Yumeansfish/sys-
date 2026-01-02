@@ -1,0 +1,65 @@
+-------
+       
+       
+       
+       
+       
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+       
+       
+       
+       
+  o    
+-------
+0123456
+Player 'x' to move:
+  x
+  v
+-------
+       
+       
+       
+  x    
+  o    
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+       
+       
+  o    
+  x    
+  o    
+-------
+0123456
+Player 'x' to move:
+  x
+  v
+-------
+       
+  x    
+  o    
+  x    
+  o    
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+  o    
+  x    
+  o    
+  x    
+  o    
+-------
+0123456
+Player 'x' to move:
+Illegal move.

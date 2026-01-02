@@ -1,0 +1,3194 @@
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o                
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x              
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o            
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x          
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o        
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x      
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o    
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x  
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x o
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxx o x o x o x o
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxoo x o x o x o
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxx o x o x o
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxoo x o x o
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxx o x o
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxoo x o
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxx o
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x                
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o              
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x            
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o          
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+        x
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x        
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o      
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x    
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o  
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xoo x o x o x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxx o x o x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxoo x o x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+       x
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxx o x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+         o
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxoo x o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxx o x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxoo x
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o                
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x              
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o            
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x          
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o        
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x      
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o    
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x  
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxx o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxoo x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxx o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxoo x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxx o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxoo x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxx o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x                
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o              
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x            
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o          
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+        x
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x        
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o      
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x    
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o  
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xoo x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxx o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxoo x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+       x
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxx o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+         o
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxoo x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxx o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxoo x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o                
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x              
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o            
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x          
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o        
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x      
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o    
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x  
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+o x o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxx o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxoo x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxx o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxoo x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxx o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxoo x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxx o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x                
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o              
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x            
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o          
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+        x
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o x        
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o x o      
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o x o x    
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o  
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+x o x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xoo x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxx o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxoo x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+       x
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxooxx o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+         o
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxooxxoo x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxx o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxoo x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+                 
+                 
+                 
+                 
+o                
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+o x              
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+                 
+                 
+                 
+                 
+o x o            
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+                 
+                 
+o x o x          
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+                 
+                 
+o x o x o        
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+                 
+                 
+                 
+                 
+o x o x o x      
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+                 
+                 
+o x o x o x o    
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+                 
+                 
+o x o x o x o x  
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+                 
+                 
+o x o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+                 
+                 
+                 
+                 
+oxx o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+oxxoo x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxx o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxxoo x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxxooxx o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxxooxxoo x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxxooxxooxx o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+                 
+                 
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+                 
+                 
+x                
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+                 
+                 
+x o              
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+                 
+                 
+x o x            
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+                 
+                 
+x o x o          
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+        x
+        v
+-----------------
+                 
+                 
+                 
+x o x o x        
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+                 
+                 
+x o x o x o      
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+                 
+                 
+x o x o x o x    
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+x o x o x o x o  
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+                 
+                 
+x o x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+xoo x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+xooxx o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+xooxxoo x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+       x
+       v
+-----------------
+                 
+                 
+                 
+xooxxooxx o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+         o
+         v
+-----------------
+                 
+                 
+                 
+xooxxooxxoo x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+xooxxooxxooxx o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+xooxxooxxooxxoo x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+                 
+                 
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+                 
+                 
+o                
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+o x              
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+                 
+                 
+o x o            
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+o x o x          
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+o x o x o        
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+                 
+                 
+o x o x o x      
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+o x o x o x o    
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+o x o x o x o x  
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+o x o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+                 
+                 
+oxx o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+oxxoo x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+oxxooxx o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+oxxooxxoo x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+oxxooxxooxx o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+                 
+                 
+oxxooxxooxxoo x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+oxxooxxooxxooxx o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+x                
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+x o              
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+x o x            
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+x o x o          
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+        x
+        v
+-----------------
+                 
+x o x o x        
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+x o x o x o      
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+x o x o x o x    
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+x o x o x o x o  
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+x o x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+xoo x o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+xooxx o x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+xooxxoo x o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+       x
+       v
+-----------------
+                 
+xooxxooxx o x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+         o
+         v
+-----------------
+                 
+xooxxooxxoo x o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+xooxxooxxooxx o x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+xooxxooxxooxxoo x
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+o
+v
+-----------------
+o                
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+o x              
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+    o
+    v
+-----------------
+o x o            
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+o x o x          
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+o x o x o        
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+          x
+          v
+-----------------
+o x o x o x      
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+o x o x o x o    
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+o x o x o x o x  
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+o x o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+ x
+ v
+-----------------
+oxx o x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+oxxoo x o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+oxxooxx o x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+oxxooxxoo x o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+oxxooxxooxx o x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+           o
+           v
+-----------------
+oxxooxxooxxoo x o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+oxxooxxooxxooxx o
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+xooxxooxxooxxooxx
+oxxooxxooxxooxxoo
+-----------------
+01234567890123456
+Game over.

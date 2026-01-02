@@ -1,0 +1,502 @@
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+-------
+0123456
+Player 'o' to move:
+     o
+     v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     o 
+-------
+0123456
+Player 'x' to move:
+  x
+  v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+  x  o 
+-------
+0123456
+Player 'o' to move:
+     o
+     v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     o 
+  x  o 
+-------
+0123456
+Player 'x' to move:
+x
+v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     o 
+x x  o 
+-------
+0123456
+Player 'o' to move:
+ o
+ v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     o 
+xox  o 
+-------
+0123456
+Player 'x' to move:
+    x
+    v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     o 
+xox xo 
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+  o  o 
+xox xo 
+-------
+0123456
+Player 'x' to move:
+    x
+    v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+  o xo 
+xox xo 
+-------
+0123456
+Player 'o' to move:
+    o
+    v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    o  
+  o xo 
+xox xo 
+-------
+0123456
+Player 'x' to move:
+    x
+    v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    o  
+  o xo 
+xox xo 
+-------
+0123456
+Player 'o' to move:
+      o
+      v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    o  
+  o xo 
+xox xoo
+-------
+0123456
+Player 'x' to move:
+    x
+    v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    o  
+  o xo 
+xox xoo
+-------
+0123456
+Player 'o' to move:
+      o
+      v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    o  
+  o xoo
+xox xoo
+-------
+0123456
+Player 'x' to move:
+      x
+      v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    o x
+  o xoo
+xox xoo
+-------
+0123456
+Player 'o' to move:
+   o
+   v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    o x
+  o xoo
+xoxoxoo
+-------
+0123456
+Player 'x' to move:
+   x
+   v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    o x
+  oxxoo
+xoxoxoo
+-------
+0123456
+Player 'o' to move:
+     o
+     v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x  
+    oox
+  oxxoo
+xoxoxoo
+-------
+0123456
+Player 'x' to move:
+      x
+      v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x x
+    oox
+  oxxoo
+xoxoxoo
+-------
+0123456
+Player 'o' to move:
+ o
+ v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x x
+    oox
+ ooxxoo
+xoxoxoo
+-------
+0123456
+Player 'x' to move:
+ x
+ v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x x
+ x  oox
+ ooxxoo
+xoxoxoo
+-------
+0123456
+Player 'o' to move:
+   o
+   v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x  
+    x x
+ x ooox
+ ooxxoo
+xoxoxoo
+-------
+0123456
+Player 'x' to move:
+      x
+      v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x x
+    x x
+ x ooox
+ ooxxoo
+xoxoxoo
+-------
+0123456
+Player 'o' to move:
+     o
+     v
+-------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    x x
+    xox
+ x ooox
+ ooxxoo
+xoxoxoo
+-------
+0123456
+Player 'o' wins!

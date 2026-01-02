@@ -60,6 +60,15 @@ void tokenizer(char* line,char** tokens){
     if(count != 4)error("invalid format");
 }
 
+// void tokenizer_v2(char* line){
+//     int score1;
+//     int score2;
+//     char team1[21];
+//     char team2[21];
+//     int res = sscanf(line,"%20s %20s %d %d",team1,team2,&score1,&score2);
+//     if(res!=4)error("invalid format");
+// }
+
 
 
 struct team* find_helper(char* name){
@@ -94,9 +103,16 @@ void get_result(int amounts){
         //token[1] = team2
         //token[2] = team1_score
         //token[3] = team2_score
+        int len_1 = strlen(tokens[0]);
+        if(len_1>20)error("invalid format");
+        int len_2 = strlen(tokens[1]);
+        if(len_2>20)error("invalid format");
+
         struct team* team1 = find_helper(tokens[0]);
         int team1_score = atoi(tokens[2]);
+        if(team1_score<0)error("invalid format");
         int team2_score = atoi(tokens[3]);
+        if(team2_score<0)error("invalid format");
         if(team1){
             if(team1_score > team2_score)
             team1->score +=3;

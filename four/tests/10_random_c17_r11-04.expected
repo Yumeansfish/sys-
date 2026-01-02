@@ -1,0 +1,678 @@
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ o               
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ ox              
+-----------------
+01234567890123456
+Player 'o' to move:
+            o
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ ox         o    
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ oxx        o    
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ oxx        oo   
+-----------------
+01234567890123456
+Player 'x' to move:
+      x
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+ oxx  x     oo   
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             o   
+ oxx  x     oo   
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+             o   
+ oxx  x     oo   
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+ oxx  x     oo   
+-----------------
+01234567890123456
+Player 'x' to move:
+              x
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+ oxx  x     oox  
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         oo  
+ oxx  x     oox  
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         oo  
+ oxx  x    xoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         oo  
+ oxx ox    xoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+   x
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o         oo  
+ oxx ox    xoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+          o
+          v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o         oo  
+ oxx ox   oxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o x       oo  
+ oxx ox   oxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+      o
+      v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o xo      oo  
+ oxx ox   oxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+            x
+            v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o xo     xoo  
+ oxx ox   oxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+       o
+       v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o xo     xoo  
+ oxx oxo  oxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+x
+v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+   o xo     xoo  
+xoxx oxo  oxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+ o
+ v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+ o o xo     xoo  
+xoxx oxo  oxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   x         x   
+ o o xo     xoo  
+xoxx oxo xoxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             o   
+   x         x   
+ o o xo     xoo  
+xoxx oxo xoxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+           x
+           v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             o   
+   x         x   
+ o o xo    xxoo  
+xoxx oxo xoxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+     o
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             o   
+   x o       x   
+ o o xo    xxoo  
+xoxx oxo xoxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+    x
+    v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+             o   
+   x o       x   
+ o o xo    xxoo  
+xoxxxoxo xoxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+   o
+   v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+   o         o   
+   x o       x   
+ o o xo    xxoo  
+xoxxxoxo xoxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+             x
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+   x o       x   
+ o o xo    xxoo  
+xoxxxoxo xoxoox  
+-----------------
+01234567890123456
+Player 'o' to move:
+              o
+              v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+   x o       xo  
+ o o xo    xxoo  
+xoxxxoxo xoxoox  
+-----------------
+01234567890123456
+Player 'x' to move:
+               x
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+   x o       xo  
+ o o xo    xxoo  
+xoxxxoxo xoxooxx 
+-----------------
+01234567890123456
+Player 'o' to move:
+               o
+               v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+   x o       xo  
+ o o xo    xxooo 
+xoxxxoxo xoxooxx 
+-----------------
+01234567890123456
+Player 'x' to move:
+  x
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+   x o       xo  
+ oxo xo    xxooo 
+xoxxxoxo xoxooxx 
+-----------------
+01234567890123456
+Player 'o' to move:
+  o
+  v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+  ox o       xo  
+ oxo xo    xxooo 
+xoxxxoxo xoxooxx 
+-----------------
+01234567890123456
+Player 'x' to move:
+                x
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+  ox o       xo  
+ oxo xo    xxooo 
+xoxxxoxo xoxooxxx
+-----------------
+01234567890123456
+Player 'o' to move:
+        o
+        v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+  ox o       xo  
+ oxo xo    xxooo 
+xoxxxoxooxoxooxxx
+-----------------
+01234567890123456
+Player 'x' to move:
+         x
+         v
+-----------------
+                 
+                 
+                 
+                 
+                 
+                 
+             x   
+   o         o   
+  ox o       xo  
+ oxo xo  x xxooo 
+xoxxxoxooxoxooxxx
+-----------------
+01234567890123456
+Player 'o' to move:
+             o
+             v
+-----------------
+                 
+                 
+                 
+                 
+                 
+             o   
+             x   
+   o         o   
+  ox o       xo  
+ oxo xo  x xxooo 
+xoxxxoxooxoxooxxx
+-----------------
+01234567890123456
+Player 'x' to move:
+     x
+     v
+-----------------
+                 
+                 
+                 
+                 
+                 
+             o   
+             x   
+   o x       o   
+  ox o       xo  
+ oxo xo  x xxooo 
+xoxxxoxooxoxooxxx
+-----------------
+01234567890123456
+Player 'o' to move:
+                o
+                v
+-----------------
+                 
+                 
+                 
+                 
+                 
+             o   
+             x   
+   o x       o   
+  ox o       xo  
+ oxo xo  x xxoooo
+xoxxxoxooxoxooxxx
+-----------------
+01234567890123456
+Player 'o' wins!

@@ -1,0 +1,179 @@
+-------
+       
+       
+       
+       
+       
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+       
+       
+       
+       
+  o    
+-------
+0123456
+Player 'x' to move:
+Illegal move.
+Illegal move.
+  x
+  v
+-------
+       
+       
+       
+  x    
+  o    
+-------
+0123456
+Player 'o' to move:
+   o
+   v
+-------
+       
+       
+       
+  x    
+  oo   
+-------
+0123456
+Player 'x' to move:
+   x
+   v
+-------
+       
+       
+       
+  xx   
+  oo   
+-------
+0123456
+Player 'o' to move:
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+   o
+   v
+-------
+       
+       
+   o   
+  xx   
+  oo   
+-------
+0123456
+Player 'x' to move:
+Illegal move.
+ x
+ v
+-------
+       
+       
+   o   
+  xx   
+ xoo   
+-------
+0123456
+Player 'o' to move:
+Illegal move.
+Illegal move.
+    o
+    v
+-------
+       
+       
+   o   
+  xx   
+ xooo  
+-------
+0123456
+Player 'x' to move:
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+ x
+ v
+-------
+       
+       
+   o   
+ xxx   
+ xooo  
+-------
+0123456
+Player 'o' to move:
+Illegal move.
+  o
+  v
+-------
+       
+       
+  oo   
+ xxx   
+ xooo  
+-------
+0123456
+Player 'x' to move:
+Illegal move.
+ x
+ v
+-------
+       
+       
+ xoo   
+ xxx   
+ xooo  
+-------
+0123456
+Player 'o' to move:
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+ o
+ v
+-------
+       
+ o     
+ xoo   
+ xxx   
+ xooo  
+-------
+0123456
+Player 'x' to move:
+Illegal move.
+Illegal move.
+Illegal move.
+Illegal move.
+  x
+  v
+-------
+       
+ ox    
+ xoo   
+ xxx   
+ xooo  
+-------
+0123456
+Player 'o' to move:
+Illegal move.
+Illegal move.
+     o
+     v
+-------
+       
+ ox    
+ xoo   
+ xxx   
+ xoooo 
+-------
+0123456
+Player 'o' wins!

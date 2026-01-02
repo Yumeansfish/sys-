@@ -1,0 +1,65 @@
+-------
+       
+       
+       
+       
+       
+-------
+0123456
+Player 'o' to move:
+  o
+  v
+-------
+       
+       
+       
+       
+  o    
+-------
+0123456
+Player 'x' to move:
+Unknown command.
+Unknown command.
+Unknown command.
+   x
+   v
+-------
+       
+       
+       
+       
+  ox   
+-------
+0123456
+Player 'o' to move:
+    o
+    v
+-------
+       
+       
+       
+       
+  oxo  
+-------
+0123456
+Player 'x' to move:
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+Unknown command.
+     x
+     v
+-------
+       
+       
+       
+       
+  oxox 
+-------
+0123456
+Player 'o' to move:
