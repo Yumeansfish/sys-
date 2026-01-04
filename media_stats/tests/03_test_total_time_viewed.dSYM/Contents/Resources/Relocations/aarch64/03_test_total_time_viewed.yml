@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     'tests/03_test_total_time_viewed'
+relocations:     []
+...
