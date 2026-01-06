@@ -1,0 +1,6 @@
+bg-fg-ft: fg=0,255,0 bg=255,0,0 ft=Hack
+bg-ft-fg: fg=0,255,0 bg=255,0,0 ft=Hack
+fg-bg-ft: fg=0,255,0 bg=255,0,0 ft=Hack
+fg-ft-bg: fg=0,255,0 bg=255,0,0 ft=Hack
+ft-bg-fg: fg=0,255,0 bg=255,0,0 ft=Hack
+ft-fg-bg: fg=0,255,0 bg=255,0,0 ft=Hack

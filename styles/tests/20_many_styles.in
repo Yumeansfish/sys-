@@ -1,0 +1,187 @@
+style bongo-album foreground slate-blue font bold
+style bongo-album-title
+style bongo-currently-playing-track background bg-highlight
+style bongo-track-title
+style button
+style compilation-error font bold
+style compilation-info foreground green font bold
+style compilation-warning foreground red-low font bold
+style cursor background bg-blue-strong
+style custom-link
+style base font Hack foreground black background bg-normal
+style dictionary-reference-face foreground blue-high
+style dictionary-word-definition-face
+style dictionary-word-entry-face foreground slate-blue font bold
+style dired-broken-symlink background bg-red-desat
+style dired-directory foreground slate-gray font bold
+style dired-flagged background bg-red
+style dired-header foreground blue font bold-1.2
+style dired-marked background bg-blue
+style dired-perm-write foreground slate-blue-high
+style dired-set-id foreground red
+style dired-special foreground olive
+style dired-symlink foreground gray
+style escape-glyph foreground red-slate-high
+style eshell-prompt-face foreground blue font bold
+style fixed-pitch
+style font-latex-math-face foreground red-slate
+style font-latex-sedate-face font bold foreground slate-gray
+style font-latex-string-face foreground olive
+style font-latex-italic-face font italic
+style font-latex-bold-face font bold foreground gray
+style font-latex-verbatim-face font fixed-pitch foreground gray
+style font-latex-script-char-face foreground red-high
+style font-latex-warning-face font bold foreground red-high
+style font-lock-builtin-face foreground green
+style font-lock-comment-delimiter-face
+style font-lock-comment-face foreground slate-gray-low
+style font-lock-constant-face foreground blue
+style font-lock-doc-face foreground purple
+style font-lock-doc-markup-face font bold
+style font-lock-function-name-face font bold foreground slate-blue
+style font-lock-keyword-face font bold foreground black
+style font-lock-negation-char-face
+style font-lock-preprocessor-face font builtin-face
+style font-lock-regexp-grouping-backslash
+style font-lock-regexp-grouping-construct
+style font-lock-string-face font italic foreground olive
+style font-lock-type-face foreground red
+style font-lock-variable-name-face foreground slate-gray font semi-bold
+style font-lock-warning-face foreground red-high
+style fringe background bg-light
+style gnus-cite-1 foreground blue
+style gnus-cite-2 foreground red
+style gnus-cite-3 foreground green
+style gnus-cite-4 foreground slate-blue
+style gnus-cite-5 foreground gray
+style gnus-group-mail-1 foreground green font bold
+style gnus-group-mail-1-empty foreground green
+style gnus-group-mail-2 foreground olive font bold
+style gnus-group-mail-2-empty foreground olive
+style gnus-group-mail-3 foreground slate-blue font bold
+style gnus-group-mail-3-empty
+style gnus-group-news-3 foreground slate-gray font bold
+style gnus-header-content foreground blue
+style gnus-header-from foreground slate-gray
+style gnus-header-name font bold
+style gnus-header-subject foreground red font bold
+style gnus-server-agent foreground slate-blue font bold
+style gnus-server-denied foreground red-high font bold
+style gnus-server-offline foreground red font bold
+style gnus-server-opened foreground green font bold
+style gnus-summary-cancelled font strike-through
+style gnus-summary-high-ancient background bg-highlight
+style gnus-summary-high-read background bg-highlight
+style gnus-summary-high-ticked background bg-highlight
+style gnus-summary-high-undownloaded background bg-highlight
+style gnus-summary-high-unread background bg-highlight
+style gnus-summary-low-ancient background bg-dim
+style gnus-summary-low-read background bg-dim
+style gnus-summary-low-ticked background bg-dim
+style gnus-summary-low-undownloaded background bg-dim
+style gnus-summary-low-unread background bg-dim
+style gnus-summary-normal-ancient foreground black
+style gnus-summary-normal-read foreground blue
+style gnus-summary-normal-ticked foreground blue-high
+style gnus-summary-normal-unread font bold
+style gnus-summary-selected font highlight
+style header-line font variable-pitch-bold-1.2 background bg-dim
+style highlight background bg-highlight
+style homoglyph foreground red-slate
+style isearch background bg-yellow
+style isearch-group-1 background bg-yellow
+style isearch-group-2 background bg-yellow-desat
+style isearch-fail background bg-red-desat
+style lazy-highlight foreground black background bg-blue-desat
+style link foreground blue-high font underline
+style link-visited foreground slate-blue-high
+style magit-item-highlight background bg-highlight
+style match background bg-yellow
+style message-cited-text-1 foreground slate-blue
+style message-header-name font bold
+style message-header-other
+style message-header-subject foreground red
+style message-header-to foreground blue
+style message-header-xheader foreground blue-low
+style minibuffer-prompt foreground blue
+style mm-uu-extract background bg-highlight foreground green
+style mode-line foreground black background bg-slate-gray font fixed-pitch
+style mode-line-buffer-id font bold
+style mode-line-emphasis font italic-bold
+style mode-line-inactive background bg-slate-gray-desat
+style mode-line-highlight foreground blue-high
+style next-error
+style org-agenda-date foreground black font bold
+style org-agenda-date-today font bold-underline
+style org-agenda-date-weekend font bold
+style org-agenda-structure foreground black font bold
+style org-block background bg-dim foreground black
+style org-code foreground slate-blue
+style org-verbatim font fixed-pitch foreground slate-blue
+style org-date foreground red
+style org-done foreground green font bold
+style org-drawer foreground gray
+style org-headline-done font strike-through
+style org-hide foreground gray
+style org-level-1 font bold-1.2
+style org-level-2 foreground blue font bold
+style org-level-3 foreground blue
+style org-level-4 foreground slate-gray
+style org-level-5 foreground slate-blue
+style org-level-6 foreground blue-low
+style org-level-7 foreground slate-gray-low
+style org-level-8 foreground green-low
+style org-link 
+style org-meta-line font fixed-pitch foreground gray
+style org-special-keyword foreground slate-blue
+style org-time-grid foreground slate-gray-low
+style org-todo foreground red-high font bold
+style query-replace 
+style region background bg-yellow
+style secondary-selection background bg-green
+style sh-heredoc foreground red-slate
+style sh-quoted-exec foreground red
+style shadow foreground gray
+style show-paren-match background bg-blue
+style tooltip foreground black background bg-yellow-desat font variable-pitch
+style trailing-whitespace background bg-red-strong
+style variable-pitch font Noto-Sans
+
+color bg-normal e6e6e6
+color bg-highlight fffff0
+color bg-dim d3d3d3
+color bg-light f2f2f2
+color bg-yellow fff68f
+color bg-yellow-desat fafad2
+color bg-red-strong ff0000
+color bg-red ff8c69
+color bg-red-desat ffc1c1
+color bg-blue-strong 0000ff
+color bg-blue 87ceeb
+color bg-blue-desat b0e0e6
+color bg-green adff2f
+color bg-green-desat c1ffc1
+color bg-slate-gray 8FA1B3
+color bg-slate-gray-desat B8C2CC
+color bg-gray CCCCCC
+color black 000000
+color gray 405060
+color gray-light 778899
+color slate-blue 3D3380
+color slate-blue-low 645C99
+color slate-blue-high 6E5CE6
+color slate-gray 335980
+color slate-gray-low 5C7A99
+color green 338033
+color green-low 5C995C
+color blue 333380
+color blue-low 5C5C99
+color blue-high 0000E6
+color olive 648033
+color olive-low 83995C
+color red 803333
+color red-low 995C5C
+color red-high E60000
+color red-slate 80333D
+color red-slate-high B33646
+color purple 80335A

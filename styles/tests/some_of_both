@@ -1,0 +1,5 @@
+style ticino-normal foreground #803333 background blue font fixed
+style ticino-bright foreground #ff background bright-blue font italic
+color bright-blue 0000ff
+color blue 333380
+style default

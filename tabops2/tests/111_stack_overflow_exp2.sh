@@ -1,0 +1,1 @@
+exec "$1" format='{ipsbyptetykpvvlktyheetsajjxlhymvdxcrxeowguettlqjzokbabqaqylqiedajnzumaefbcaxcnflglionedhrvgcrapygzbpab-*/*+/--*/--*/--*-//**-+//---*/--+-++/++-+**-/*/*-/+*-//+/**-*-/-*//++-+/+*/*+/*+*/-*+/+-*//-/*+*++}' tests/big_input

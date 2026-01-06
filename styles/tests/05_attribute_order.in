@@ -1,0 +1,6 @@
+style ft-bg-fg font Hack background #ff0000 foreground #00ff00
+style bg-ft-fg background #ff0000 font Hack foreground #00ff00
+style bg-fg-ft background #ff0000 foreground #00ff00 font Hack
+style fg-bg-ft foreground #00ff00 background #ff0000 font Hack
+style fg-ft-bg foreground #00ff00 font Hack background #ff0000
+style ft-fg-bg font Hack foreground #00ff00 background #ff0000

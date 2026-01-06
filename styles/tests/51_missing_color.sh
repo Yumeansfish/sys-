@@ -1,0 +1,12 @@
+#!/bin/sh
+"$1" <<EOF
+color validcolor 123456
+style canary background #f0f0f0 foreground #202020
+color 
+EOF
+if [ "$?" = 0 ]
+then
+    printf "expecting EXIT_FAILURE result"
+    exit 1
+fi
+exit 0

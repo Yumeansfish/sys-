@@ -1,0 +1,3 @@
+style green-and-blue foreground green background blue
+style yellow-and-blue background yellow foreground blue
+style yellow-and-bright-blue background yellow foreground bright-blue

@@ -1,0 +1,1 @@
+exec "$1" format="(@a + @b - @c)*@d = {a b + c - d *}, expected @e" delim=" ,#;" tests/equations1 format="(@a * @b)/(@c + 1) + @d = {a b * c 1 + / d +}, expected @e" tests/equations2 format="{a b + c - d *} = @e" delim=" ,#;" tests/equations1 format="{a b * c 1 + / d +} = @e" tests/equations2

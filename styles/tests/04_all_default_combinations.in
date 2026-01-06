@@ -1,0 +1,8 @@
+style all-default
+style fg-set foreground #00ff00
+style bg-set background #ff0000
+style ft-set font proportional
+style bg-fg-set background #ff0000 foreground #00ff00
+style fg-font-set font proportional foreground #00ff00
+style bg-font-set font proportional background #ff0000
+style bg-fg-font-set font proportional background #ff0000 foreground #00ff00

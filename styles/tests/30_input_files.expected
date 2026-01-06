@@ -1,0 +1,6 @@
+default: fg=0,0,0 bg=255,255,255 ft=fixed
+green-and-blue: fg=0,255,0 bg=51,51,128 ft=fixed
+ticino-bright: fg=255,0,0 bg=0,0,255 ft=italic
+ticino-normal: fg=128,51,51 bg=51,51,128 ft=fixed
+yellow-and-blue: fg=51,51,128 bg=255,255,0 ft=fixed
+yellow-and-bright-blue: fg=0,0,255 bg=255,255,0 ft=fixed
