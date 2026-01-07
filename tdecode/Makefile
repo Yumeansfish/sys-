@@ -1,4 +1,5 @@
-PROGRAMS=tdecode
+PROGRAMS=tdecode tencode
+DECODE_PROGRAMS=tdecode
 
 CFLAGS=-Wall -Werror -g $(COVERAGE_FLAGS)
 CXXFLAGS=-Wall -Werror -g $(COVERAGE_FLAGS)
@@ -30,7 +31,10 @@ all: compile check
 compile: $(PROGRAMS) $(OBJECTS)
 
 .PHONY: check
-check: check-bin check-io-sh
+check: check-bin check-io-sh check-encode
+
+.PHONY: check-decode
+check-decode: check-bin check-io-sh
 
 WITH_VALGRIND ?=
 
@@ -38,6 +42,7 @@ VALGRIND_FLAGS = -q --leak-check=full --error-exitcode=1
 
 PROGRAMS_DRIVERS_EXT := $(if $(WITH_VALGRIND),-valgrind,)
 PROGRAMS_DRIVERS := $(foreach prog,$(PROGRAMS),$(prog)$(PROGRAMS_DRIVERS_EXT))
+DECODE_DRIVERS := $(foreach prog,$(DECODE_PROGRAMS),$(prog)$(PROGRAMS_DRIVERS_EXT))
 PROGRAMS_CWD := $(shell pwd)
 
 %-valgrind: %
@@ -125,10 +130,10 @@ OUTPUT_LIMIT := 10M
 SCRIPT_HANDLE_OUT_ERR_TEST := > "$$t.out" 2>&1
 
 .PHONY: check-io-sh
-check-io-sh: compile $(TESTS_IO) $(TESTS_SH) $(PROGRAMS_DRIVERS)
+check-io-sh: compile $(TESTS_IO) $(TESTS_SH) $(DECODE_DRIVERS)
 	@exec 2> /dev/null; \
 	$(SCRIPT_INIT); \
-	for p in $(PROGRAMS_DRIVERS); do \
+	for p in $(DECODE_DRIVERS); do \
 	echo "Testing $${p}:" ; \
 	for t in $(TESTS_IO_NAMES); do \
 		test_start "$$t"; \
@@ -178,6 +183,38 @@ check-io-sh: compile $(TESTS_IO) $(TESTS_SH) $(PROGRAMS_DRIVERS)
 		fi; \
 		$(SCRIPT_CHECK_ERR_FILE); \
 	done; \
+	done; \
+	test_summary 'Summary: PASS '
+
+.PHONY: check-encode
+check-encode: compile tencode
+	@exec 2> /dev/null; \
+	$(SCRIPT_INIT); \
+	echo "Testing tencode (reverse check):" ; \
+	for t in $(TESTS_IO_NAMES); do \
+		if test ! -r "$(TESTS_DIR)/$$t.expected"; then continue; fi; \
+		test_start "$$t"; \
+		"$(PROGRAMS_CWD)/tencode" < "$(TESTS_DIR)/$$t.expected" $(SCRIPT_HANDLE_OUT_ERR_TEST) &\
+		$(SCRIPT_GET_TEST_RESULT); \
+		if test "$$res" = KO; \
+		then \
+			test_diag "see $(TESTS_DIR)/$$t.expected" ;\
+			test_diag "you may run tencode < $(TESTS_DIR)/$$t.expected" ;\
+			test_diag "to see what went wrong";\
+			rm -f "$$t.out" ;\
+		else \
+			if cmp -s "$$t.out" "$(TESTS_DIR)/$$t.in"; \
+			then \
+				test_ok PASS; \
+				rm -f "$$t.out" ;\
+			else \
+				test_ko FAIL ;\
+				test_diag "see $(TESTS_DIR)/$$t.expected" ;\
+				test_diag "run diff $$t.out $(TESTS_DIR)/$$t.in";\
+				test_diag "to see the difference between actual and expected encoding";\
+			fi; \
+		fi; \
+		$(SCRIPT_CHECK_ERR_FILE); \
 	done; \
 	test_summary 'Summary: PASS '
 
