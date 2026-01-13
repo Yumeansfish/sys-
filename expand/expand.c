@@ -63,135 +63,138 @@ struct mapping{
     char* t;
 };
 
-
-
-
 static struct mapping* table = NULL;
 static int size = 0;
 static int capacity = 0;
-static char* cur_text = NULL;
+static char* cur=NULL;
+
 static char* buffer = NULL;
 static int buffer_size = 0;
 static int buffer_capacity = 0;
 
-
-void error(char* info)
-{
-    fprintf(stderr,"%s\n",info);
-    exit(EXIT_FAILURE);
-}
-
 void buffer_realloc()
 {
     int new_capacity = 0;
-    if(buffer_capacity ==0)new_capacity = 1000;
-    else new_capacity = buffer_capacity *2;
+    if(buffer_capacity ==0)new_capacity = 100;
+    else new_capacity = buffer_capacity*2;
     buffer_capacity = new_capacity;
-    char* tmp = realloc(buffer,buffer_capacity*sizeof(char));
-    if(!tmp)error("mem");
+    char* tmp = realloc(buffer,sizeof(char)*buffer_capacity);
+    if(!tmp)exit(EXIT_FAILURE);
     buffer = tmp;
+}
+
+
+
+void cleanup()
+{
+    if(table)
+    {
+        for(int i =0;i<size;i++)
+        {
+            if(table[i].p)free(table[i].p);
+            if(table[i].t)free(table[i].t);
+        }
+    }
+    free(table);
+    free(buffer);
+}
+
+void error(char* str)
+{
+    cleanup();
+    fprintf(stderr,"%s",str);
+    exit(EXIT_FAILURE);
 }
 
 
 void table_realloc()
 {
     int new_capacity = 0;
-    if(capacity == 0)new_capacity = 100;
-    else new_capacity = capacity *2;
+    if(capacity ==0)new_capacity = 100;
+    else new_capacity = capacity*2;
     capacity = new_capacity;
-    struct mapping* tmp = realloc(table,capacity*sizeof(struct mapping));
-    if(!tmp)error("mem");
+    struct mapping* tmp = realloc(table,sizeof(struct mapping)*capacity);
+    if(!tmp)exit(EXIT_FAILURE);
     table = tmp;
-}
-
-
-int check_symbol(char* line)
-{
-    while(*line)
-    {
-        if(*line == ':')return 1;
-        line ++;
-    }
-    return 0;
-}
-
-void add_mapping(char* line)
-{
-    //find first :
-    char* fir_symbol = strchr(line,':');
-    char* start = line;
-
-    int len = fir_symbol - start;
-
-    //add it to arr
-    if(size >= capacity) table_realloc();
-    table[size].p = malloc(len+1);
-    memcpy(table[size].p,start,len);
-    table[size].p[len] = '\0';
-
-    //handle t
-    table[size].t = malloc(200000);
-    cur_text = table[size].t;
-
-    fir_symbol ++;
-    while(*fir_symbol && *fir_symbol != '\n')
-    {
-        *cur_text++ = *fir_symbol++;
-    }
 }
 
 void continue_writing(char* line)
 {
-    *cur_text ++ = '\n';
+    *cur ++ = '\n';
     line++;
-    while(*line && *line !='\n')
+    while(*line)
     {
-        *cur_text++ = *line++;
+        *cur ++ = *line++;
     }
 }
+
+void add_new_mapping(char* line)
+{
+    char* symbol = strchr(line,':');
+    int len = symbol -line;
+    if(size>=capacity)table_realloc();
+    table[size].p=malloc(len+1);
+    memcpy(table[size].p,line,len);
+    table[size].p[len] = '\0';
+    table[size].t = malloc(200000);
+    cur=table[size].t;
+    char* read = symbol+1;
+    while(*read)
+    {
+        *cur++ = *read++;
+    }
+}
+
 
 void end_writing()
 {
-    *cur_text = '\0';
+    *cur = '\0';
+    cur = NULL;
     size++;
-    cur_text = NULL;
 }
 
 
-
-void get_rule(FILE* fp)
+void get_table(char* filename)
 {
-    char line[MAX_LINE];
+    FILE* fp = fopen(filename,"r");
+    if(!fp)
+    {
+        fprintf(stderr,"invalid rules file %s\n",filename);
+        exit(EXIT_FAILURE);
+    }
+    char line[MAX_LINE+1];
     while(fgets(line,sizeof(line),fp))
     {
-        //ignore line without :
-        if(!check_symbol(line))continue;
+        //delete \n
+        char* n_symbol = strchr(line,'\n');
+        *n_symbol = '\0';
+        char* symbol = strchr(line,':');
+        if(!symbol)continue;
 
+        //different mode
 
-        //: is in the start and no cur_text,ignore
-        else if(!cur_text && *line == ':')continue;
+        //when start is :
+        if(*line == ':')
+        {
+            if(cur)continue_writing(line);
+            else if(!cur)error("invalid format");
+        }
 
-        //: is in the start and has cur_text;
-        else if(cur_text && *line == ':')
-        continue_writing(line);
-
-        //: is in the middle and no cur_text,add new map
-        else if(!cur_text && *line != ':')
-        add_mapping(line);
-
-        //: is in the middle and has cur_text,end wrting
-        else if(cur_text && *line != ':')
-        {end_writing();
-        add_mapping(line);
+        //when meet :,cur_writing =1;
+        else if(*line!=':')
+        {
+            if(cur)end_writing();
+            add_new_mapping(line);
         }
     }
     //handle orphan
-    if(cur_text)
-    end_writing();
+    if(cur)end_writing();
+    fclose(fp);
 }
 
 
-void convert_to_buffer()
+
+void write_in_buffer()
 {
     int c;
     if(buffer_size>=buffer_capacity)buffer_realloc();
@@ -201,37 +204,44 @@ void convert_to_buffer()
         buffer[buffer_size++] = c;
         continue;
     }
-    buffer[buffer_size]='\0';
+    buffer[buffer_size] = '\0';
 }
+
+
 
 
 void print()
 {
-    convert_to_buffer();
-    char* buf = malloc(200000);
-    char* write = buf;
-    if(!write)error("mem");
     char* read = buffer;
     while(*read)
     {
         int found = 0;
+        char* replace = NULL;
+        int len = 0;
         for(int i =0;i<size;i++)
         {
-            int len = strlen(table[i].p);
-            if(strncmp(table[i].p,read,len)==0)
+            char* p = table[i].p;
+            len = strlen(p);
+            if(strncmp(p,read,len)==0)
             {
-                memcpy(write,table[i].t,strlen(table[i].t));
-                read += len;
-                write += strlen(table[i].t);
                 found = 1;
+                replace = table[i].t;
                 break;
             }
         }
-        if(!found)*write++ = *read++;
+        if(!found)
+        {
+            putchar(*read);
+            read++;
+        }
+        else 
+        {
+            printf("%s",replace);
+            read += len;
+
+        }
     }
-    *write = '\0';
-    printf("%s",buf);
-    free(buf);
+    return ;
 }
 
 
@@ -239,40 +249,25 @@ void print()
 
 
 
-
-
-
-
-
-int main(int argc,char* argv[])
+int main(int argc,char*argv[])
 {
-    if(argc == 1)
+    if(argc==1)
     {
-        FILE* fp = fopen("RULES","r");
-        if(!fp)
-        {
-            fprintf(stderr,"invalid rules file RULES\n");
-            exit(EXIT_FAILURE);
-        }
-        get_rule(fp);
-        fclose(fp);
+        get_table("RULES");
     }
-    else
+    else 
     {
         for(int i=1;i<argc;i++)
         {
-            FILE* fp = fopen(argv[i],"r");
-            if(!fp)
-            {
-                fprintf(stderr,"invalid rules file %s\n",argv[i]);
-                exit(EXIT_FAILURE);
-
-            }
-            get_rule(fp);
-            fclose(fp);
+            get_table(argv[i]);
         }
     }
+    write_in_buffer();
     print();
+    cleanup();
     return EXIT_SUCCESS;
-
 }
+
+
+
+

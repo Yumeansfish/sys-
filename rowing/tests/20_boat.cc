@@ -33,19 +33,31 @@ TEST(use_one_boat_in_excursion) {
 
     excursion *e2 = create_excursion(c);
     CHECK(e2 != nullptr);
+    fprintf(stderr,"Im here35\n");
 
     CHECK_CMP(use_boat(e1, "not existing boat"),==,0);
     CHECK_CMP(use_boat(e1, "boat 1"),==,1);
+    fprintf(stderr,"Im here39\n");
     CHECK_CMP(use_boat(e1, "boat 1"),==,0);
+    fprintf(stderr,"Im here41\n");
     CHECK_CMP(use_boat(e1, "boat 2"),==,0);
+    fprintf(stderr,"Im here43\n");
     CHECK_CMP(use_boat(e2, "boat 1"),==,0);
+    fprintf(stderr,"Im here45\n");
+
 
     cancel_excursion(e1);
+    fprintf(stderr,"Im here49\n");
     CHECK_CMP(boat_available(c, "boat 1"),==,1);
+    fprintf(stderr,"Im here51\n");
     CHECK_CMP(use_boat(e1, "boat 2"),==,0);
+    fprintf(stderr,"Im here53\n");
     CHECK_CMP(use_boat(e2, "boat 2"),==,1);
+    fprintf(stderr,"Im here55\n");
     cancel_excursion(e2);
+    fprintf(stderr,"Im here 57\n");
     destroy_club(c);
+    fprintf(stderr,"Im here 59\n");
     TEST_PASSED;
 }
 

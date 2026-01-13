@@ -4,167 +4,243 @@
 #include "ochecker.h"
 
 
-
 struct ochecker{
-    char* answer;
-    char* iterator;
-    oc_status_t oc_status;
+    int state;
+    int pos;
+    int row;
+    int col;
+    char* itr;
+    char* str;
     int size;
-    size_t pos;
-    size_t col;
-    size_t row;
+    int capacity;
 };
 
-void reset(struct ochecker* oc){
-    if(oc->answer)free(oc->answer);
-    oc->size = 0;
-    oc->pos = 1;
-    oc->col=1;
-    oc->row=1;
+
+
+struct ochecker* oc_create()
+{
+    struct ochecker* new= malloc(sizeof(struct ochecker));
+    if(!new)return NULL;
+    new->state = OC_CLOSED;
+    new->pos = 1;
+    new->row = 1;
+    new->col = 1;
+    new->itr = NULL;
+    new->str = NULL;
+    new->size = 0;
+    new->capacity = 0;
+    return new;
 }
 
-
-
-struct ochecker* oc_create(){
-    struct ochecker* x = malloc(sizeof(struct ochecker));
-    if(!x){
-        fprintf(stderr,"mem");
-        return NULL;
-    }
-    x->answer = NULL;
-    x->iterator = NULL;
-    x->oc_status = OC_CLOSED;
-    x->size = 0;
-    x->pos = 1;
-    x->col = 1;
-    x->row = 1;
-    return x;
+void oc_realloc(struct ochecker* oc)
+{
+    int new_capacity= 0;
+    if(oc->capacity==0)new_capacity = 100;
+    else new_capacity = oc->capacity*2;
+    oc->capacity = new_capacity;
+    char* tmp = realloc(oc->str,oc->capacity*sizeof(char));
+    if(!tmp)exit(EXIT_FAILURE);
+    oc->str = tmp;
 }
 
-void oc_destroy(struct ochecker* x){
-    if(x->answer)free(x->answer);
-    free(x);
-}
-
-int oc_open_file(struct ochecker* x,const char* fname){
-    reset(x);
-    FILE* fp = fopen(fname,"rb");
-    if(!fp){
-        fprintf(stderr,"cannot open file");
-        x->oc_status = OC_CLOSED;
-        return 0;
-    }
-    fseek(fp,0,SEEK_END);
-    int len = ftell(fp);
-    fseek(fp,0,SEEK_SET);
-    x->answer = malloc(len);
-    fread(x->answer,1,len,fp);
-    x->oc_status = OC_OPEN;
-    x->size = len;
-    x->iterator = x->answer;
-    fclose(fp);
-    return 1;
-}
-    
-
-
-int oc_open_mem(struct ochecker* x,const char* begin,const char* end){
-    int len = end-begin;
-    reset(x);
-    x->answer = malloc(len);
-    if(!x->answer){
-        fprintf(stderr,"mem");
-        x->oc_status = OC_CLOSED;
-        return 0;
-    }
-    memcpy(x->answer,begin,len);
-    x->oc_status = OC_OPEN;
-    x->size = len;
-    x->iterator = x->answer;
-    return 1;
-}
-
-int oc_open_str(struct ochecker* x,const char* s){
-    reset(x);
-    x->answer = strdup(s);
-    if(!x->answer)
+void oc_destroy(struct ochecker* oc)
+{
+    if(oc->str)
     {
-    fprintf(stderr,"mem");
-    x->oc_status = OC_CLOSED;
-    return 0;
+        free(oc->str);
+        oc->str = NULL;
     }
-    x->oc_status = OC_OPEN;
-    x->size = strlen(s);
-    x->iterator = x->answer;
-    return 1;
+    free(oc);
+    oc=NULL;
+}
+
+void reset(struct ochecker* oc)
+{
+    if(oc->str)free(oc->str);
+    oc->itr = NULL;
+    oc->pos = 1;
+    oc->size = 0;
+    oc->row = 1;
+    oc->col =1;
+    oc->capacity = 0;
+    oc->str = NULL;
 }
 
 
-int oc_putc(struct ochecker* oc,char c){
-    if(oc->oc_status == OC_CLOSED)return 0;
-    if(oc->oc_status == OC_ERROR) return 0;
-    //if ==c and not overflow,add pos and iterator
-    if(oc->pos <= oc->size && *oc->iterator == c){
-        oc->iterator++;
-        oc->pos++;
-        if(c=='\n'){
-            oc->row++;
-            oc->col =1;
-        }
-        else{
-            oc->col++;
-        }
-        return 1;
+
+int oc_open_file(struct ochecker* oc,const char* name)
+{
+    FILE* fp = fopen(name,"r");
+    if(!fp)
+    {
+        oc->state = OC_CLOSED;
+        return 0 ;
     }
-    //if != c or overflow,error 
-    else {
-        oc->oc_status = OC_ERROR;
+    reset(oc);
+    int c;
+    int process = 0;
+    while((c=fgetc(fp))!=EOF)
+    {
+        if(oc->size>=oc->capacity)oc_realloc(oc);
+        oc->str[oc->size++] = c;
+        process = 1;
+        continue;
+    }
+    if(process)
+    {oc->str[oc->size] = '\0';
+    oc->state = OC_OPEN;
+    oc->itr = oc->str;
+    }
+    else
+    {
+        oc->str = malloc(1);
+        oc->str[oc->size++]='\0';
+        oc->state = OC_OPEN;
+        oc->itr = oc->str;
+    }
+    return 1;
+}
+
+int  oc_open_mem(struct ochecker*oc,const char* begin,const char* end)
+{
+    int len = end-begin;
+    reset(oc);
+    oc->str = malloc(len+1);
+    if(!oc->str)
+    {
+        oc->state = OC_CLOSED;
         return 0;
     }
-}
-
-int oc_puts(struct ochecker* oc,const char* c){
-    while(*c){
-        int res = oc_putc(oc,*c);
-        if(res)c++;
-        else return 0;
-    }
+    memcpy(oc->str,begin,len);
+    oc->str[len] = '\0';
+    oc->size += len;
+    oc->state = OC_OPEN;
+    oc->itr = oc->str;
     return 1;
 }
 
-int oc_write(struct ochecker* oc,const char* buf,size_t len){
-    for(size_t i =0;i<len;i++){
-        int res = oc_putc(oc,buf[i]);
-        if(!res)return 0;
-    }
-    return 1;
-
-}
-
-int oc_close(struct ochecker* oc){
-    if(oc->oc_status == OC_ERROR)return 0;
-    if(oc->size != oc->pos-1){
-        oc->oc_status = OC_ERROR;
+int oc_open_str(struct ochecker*oc,const char* str)
+{
+    int len = strlen(str);
+    reset(oc);
+    oc->str = malloc(len+1);
+    if(!oc->str)
+    {
+        oc->state = OC_CLOSED;
         return 0;
     }
-    oc->oc_status = OC_CLOSED;
+    memcpy(oc->str,str,len);
+    oc->str[len] = '\0';
+    oc->size += len;
+    oc->state = OC_OPEN;
+    oc->itr = oc->str;
     return 1;
 }
 
-
-oc_status_t oc_status(const struct ochecker* oc){
-    return oc->oc_status;
-}
-
-size_t oc_position(const struct ochecker* oc){
+size_t oc_position(const struct ochecker* oc)
+{
     return oc->pos;
 }
 
-size_t oc_line(const struct ochecker* oc){
+size_t oc_line(const struct ochecker* oc)
+{
     return oc->row;
 }
 
-size_t oc_column(const struct ochecker* oc){
+size_t oc_column(const struct ochecker* oc)
+{
     return oc->col;
 }
+
+oc_status_t oc_status(const struct ochecker* oc)
+{
+    return oc->state;
+}
+
+
+
+
+int oc_putc(struct ochecker* oc,char c)
+{
+    if(oc->state == OC_CLOSED||oc->state == OC_ERROR)return 0;
+    if(oc->pos > oc->size)
+    {
+        oc->state = OC_ERROR;
+        return 0;
+    }
+    if(*oc->itr!=c)
+    {
+        oc->state = OC_ERROR;
+        return 0;
+    }
+    if(*oc->itr==c)
+    {
+        oc->pos++;
+        oc->itr++;
+        if(c=='\n')
+        {
+            oc->row++;
+            oc->col = 1;
+        }
+        else
+        {
+            oc->col++;
+        }
+    }
+    return 1;
+}
+
+int oc_puts(struct ochecker*oc,const char* s)
+{
+    if(oc->state == OC_CLOSED||oc->state == OC_ERROR)return 0;
+    while(*s)
+    {
+        int res = oc_putc(oc,*s);
+        if(res)s++;
+        else
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int oc_write(struct ochecker* oc,const char* buf,size_t len)
+{
+    if(oc->state == OC_CLOSED||oc->state == OC_ERROR)return 0;
+    while(len>0)
+    {
+        int res = oc_putc(oc,*buf);
+        if(res)
+        {
+            buf++;
+            len --;
+        }
+        else 
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int oc_close(struct ochecker* oc)
+{
+    if(oc->state == OC_CLOSED||oc->state == OC_ERROR)return 0;
+    if(!*(oc->itr))
+    {
+        oc->state = OC_CLOSED;
+        return 1;
+    }
+    else
+    {
+        oc->state = OC_ERROR;
+        return 0;
+    }
+    return 1;
+}
+
+
+
+
 
