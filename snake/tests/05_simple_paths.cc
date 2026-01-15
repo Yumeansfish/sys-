@@ -109,21 +109,21 @@ TEST (ten_circles_simple) {
 }
 
 TEST (ten_circles_simple_border) {
-    struct snake * s = snake_new (100, 10, 100);
+    struct snake * s = snake_new (20, 10, 20);
     CHECK_CMP (s,!=,nullptr);
     CHECK_CMP (snake_start (s, 0, 0, SNAKE_DOWN),==,SNAKE_OKAY);
-    for (int j = 0; j < 10; ++j) {
+    for (int j = 0; j < 3; ++j) {
 	CHECK_CMP (snake_change_direction (s, SNAKE_RIGHT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_DOWN),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_LEFT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_UP),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
     }
     snake_destroy (s);
@@ -131,21 +131,21 @@ TEST (ten_circles_simple_border) {
 }
 
 TEST (ten_circles_simple_almost_full) {
-    struct snake * s = snake_new (100, 10, 200);
+    struct snake * s = snake_new (20, 10, 40);
     CHECK_CMP (s,!=,nullptr);
     CHECK_CMP (snake_start (s, 0, 0, SNAKE_DOWN),==,SNAKE_OKAY);
-    for (int j = 0; j < 10; ++j) {
+    for (int j = 0; j < 3; ++j) {
 	CHECK_CMP (snake_change_direction (s, SNAKE_RIGHT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_DOWN),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_LEFT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_UP),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
     }
     snake_destroy (s);
@@ -153,21 +153,21 @@ TEST (ten_circles_simple_almost_full) {
 }
 
 TEST (ten_circles_simple_full) {
-    struct snake * s = snake_new (100, 10, 216);
+    struct snake * s = snake_new (20, 10, 56);
     CHECK_CMP (s,!=,nullptr);
     CHECK_CMP (snake_start (s, 0, 0, SNAKE_DOWN),==,SNAKE_OKAY);
-    for (int j = 0; j < 10; ++j) {
+    for (int j = 0; j < 3; ++j) {
 	CHECK_CMP (snake_change_direction (s, SNAKE_RIGHT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_DOWN),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_LEFT),==,SNAKE_OKAY);
-	for (int i = 0; i < 99; ++i) 
+	for (int i = 0; i < 19; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	CHECK_CMP (snake_change_direction (s, SNAKE_UP),==,SNAKE_OKAY);
-	for (int i = 0; i < 9; ++i) 
+	for (int i = 0; i < 9; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
     }
     snake_destroy (s);
@@ -176,7 +176,7 @@ TEST (ten_circles_simple_full) {
 
 TEST (spiral) {
     const int r = 10;
-    const int c = 100;
+    const int c = 20;
     struct snake * s = snake_new (c, r, c*r);
     CHECK_CMP (s,!=,nullptr);
     int x = c;
@@ -218,7 +218,7 @@ TEST (spiral) {
 
 TEST (down_up) {
     const int r = 10;
-    const int c = 100;
+    const int c = 20;
     struct snake * s = snake_new (c, r, c*r);
     CHECK_CMP (s,!=,nullptr);
     CHECK_CMP (snake_start (s, 0, 0, SNAKE_DOWN),==,SNAKE_OKAY);

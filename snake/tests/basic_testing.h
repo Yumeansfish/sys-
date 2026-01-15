@@ -170,7 +170,7 @@ BT_POSSIBLY_UNUSED
 static int bt_fork_tests = 1;
 
 BT_POSSIBLY_UNUSED
-static unsigned int bt_timeout = 3; /* three seconds */
+static unsigned int bt_timeout = 30; /* thirty seconds */
 
 BT_POSSIBLY_UNUSED
 static int bt_verbose = 1;

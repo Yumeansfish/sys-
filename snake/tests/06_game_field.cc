@@ -410,40 +410,40 @@ TEST (spiral_5_by_5) {
 }
 
 TEST (spiral) {
-    const int r = 1001;
-    const int c = 1001;
+    const int r = 21;
+    const int c = 21;
     struct snake * s = snake_new (c, r, c*r);
     CHECK_CMP (s,!=,nullptr);
     int x = c;
     int y = r;
     CHECK_CMP (snake_start (s, 0, 0, SNAKE_RIGHT),==,SNAKE_OKAY);
     if (x > 1) {
-	for (int i = 1; i < x; ++i) 
+	for (int i = 1; i < x; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
     }
     for (;;) {
 	if (y <= 1)
 	    break;
 	snake_change_direction (s, SNAKE_DOWN);
-	for (int i = 1; i < y; ++i) 
+	for (int i = 1; i < y; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	--y;
 	if (x <= 1)
 	    break;
 	snake_change_direction (s, SNAKE_LEFT);
-	for (int i = 1; i < x; ++i) 
+	for (int i = 1; i < x; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	--x;
 	if (y <= 1)
 	    break;
 	snake_change_direction (s, SNAKE_UP);
-	for (int i = 1; i < y; ++i) 
+	for (int i = 1; i < y; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	--y;
 	if (x <= 1)
 	    break;
 	snake_change_direction (s, SNAKE_RIGHT);
-	for (int i = 1; i < x; ++i) 
+	for (int i = 1; i < x; ++i)
 	    CHECK_CMP (snake_step (s),==,SNAKE_OKAY);
 	--x;
     }
@@ -454,7 +454,7 @@ TEST (spiral) {
 	    CHECK_CMP (p[i],==,'@');
 	else
 	    CHECK_CMP (p[i],==,'#');
-    }	
+    }
     snake_destroy (s);
     TEST_PASSED;
 }

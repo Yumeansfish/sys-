@@ -4,224 +4,191 @@
 #include<ctype.h>
 #include "rec_io.h"
 
+static char* def_sep = " ";
 
-// Exercise 20. (60’) Write a module that implements a formatting filter for text records. In essence,
-// an application uses a filter by first passing a string of characters representing a record, and then by
-// producing an output of that input record according to a format string. A text record consists of one
-// or more textual fields separated by a separator string. The module must implement filter objects
-// as specified by the attached header file rec_io.h (below). An application might create multiple filter
-// objects, which may be used at the same time, and that must be independent of each other.
-// The test_rec_io1.c program you find on-line is a test for the rec_io module. Use it to test your
-// implementation.
-// File rec_io.h: [download this file]
-// #ifndef REC_IO_H_INCLUDED
-// #define REC_IO_H_INCLUDED
-// #include <stddef.h>
-// struct rec_io;
-// /* This is the maximal size for an input record. The module must
-// * support input records up to this size.
-// */
-// #define MAX_RECORD_LENGTH 1000
-// /* This is the maximal size for a record separator. The module must
-// * support separators up to this size.
-// */
-// #define MAX_SEPARATOR_LENGTH 10
-// /* Constructor
-// *
-// * Returns a pointer to a valid rec_io object, or NULL in case of
-// * error (e.g ., insufficient memory)
-// */
-// extern struct rec_io * rec_io_new();
-// /* Destructor
-// */
-// extern void rec_io_destroy(struct rec_io *);
-// /* Configure this rec_io filter to use the separator string defined by
-// * the begin and end pointers. Notice that a separator can be any
-// * sequence of bytes (at most MAX_SEPARATOR_LENGTH). In particular, a
-// * separator may contain the NULL character (’\0’, one or more).
-// *
-// * The default separator is the sequence consisting of a single space
-// * character. Setting a separator determines how the filter reads any
-// * successive input record (with rec_io_read_record).
-// */
-// extern void rec_io_set_separator(struct rec_io * this, const char * begin, const char * end);
-// /* Passes an input record to this filter for later processing by the
-// * filter . An input record is any sequence of characters (at most
-// * MAX_RECORD_LENGTH) composed of fields separaterd by separator
-// * strings. The beginning of the sequence and the end of the sequence
-// * are implicit separators, so an input sequence that does not contain
-// 26
-// * the separator consists of exactly one field equal to the entire
-// * sequence. Fields may be zero−length sequences.
-// *
-// * This method must return the number of fields read.
-// */
-// extern int rec_io_read_record(struct rec_io * this, const char * begin, const char * end);
-// /* Outputs the input record previously read with rec_io_read_record
-// * using the given format string. The output is given as a sequence
-// * of characters written in the output buffer provided by the
-// * application. This method may not write more than maxlen characters
-// * into the output buffer. The return value is the actual number of
-// * characters written into the output.
-// *
-// * The format string is a C string, meaning it is terminated by ’\0’.
-// * The format string may contain field indicator consisting of a
-// * single percent character (’%’) followed by a decimal number.
-// * Fields are numbered starting from 0. So, for example, the format
-// * string "%0" should output the first fields. A field indicator that
-// * points to a field that was not read must have no output (for
-// * example, "%4" when only four or less fields were read).
-// *
-// * Any other character or sequence of characters in the format string
-// * must be copied identically into the output. So, for example, the
-// * format string "1: %0\n2: %1\n" should output two lines containing
-// * the first and second field, respectively.
-// *
-// * This method can be called multiple times for the same record,
-// * possibly with different format strings.
-// */
-// extern size_t rec_io_write_record(struct rec_io * this,
-// char * out, size_t maxlen, const char * format);
-// #endif
-
-
-
-static char* def = " ";
 
 struct rec_io{
-    char* text;
-    char* separator;
-    int size;
-    int index;
-    char* itr;
-    int len;
+    char* sep; //separator
+    int len; //length of separator
+    struct sequence* tokens;//tokens part
+    int size;//tokens index for next writting position
+    int capacity;
 };
 
+struct sequence{
+    const char* begin;
+    const char* end;
+};
 
-struct rec_io* rec_io_new(){
-    struct rec_io* new = malloc(sizeof(struct rec_io));
+void tokens_realloc(struct rec_io *r)
+{
+    int new_capacity = 0;
+    if(r->capacity ==0)new_capacity = 100;
+    else new_capacity = r->capacity *2;
+    r->capacity = new_capacity;
+    struct sequence* tmp = realloc(r->tokens,r->capacity*sizeof(struct sequence));
+    if(!tmp)return ;
+    r->tokens = tmp;
+}
+
+
+extern struct rec_io * rec_io_new()
+{
+    struct rec_io* new =malloc(sizeof(struct rec_io));
     if(!new)return NULL;
-    new -> text = NULL;
-    new -> separator = def;
-    new -> size = 0;
-    new -> index = 0;
-    new -> itr = NULL;
-    new -> len = 1;
+    new->sep = NULL;
+    new->len = 0;
+    new->size = 0;
+    new->tokens = NULL;
+    new->capacity = 0;
     return new;
 }
 
-void rec_io_destroy(struct rec_io* i){
-    if(!i)return ;
-    if(i->text)free(i->text);
-    free(i);
+
+void rec_io_destroy(struct rec_io * r)
+{
+    if(r->sep)free(r->sep);
+    if(r->tokens)free(r->tokens);
+    free(r);
 }
 
 
-
-static char tokens[1000][1000];
-static int tokens_len[1000];
-
-void rec_io_set_separator(struct rec_io *this,const char* begin,const char* end){
-    if(!this)return;
-    int len = end - begin;
-    if(len == 0 ||len > MAX_SEPARATOR_LENGTH)return;
-    if(this->separator){
-        if(this->separator!=def)free(this->separator);
-    }
+void rec_io_set_separator(struct rec_io * this, const char * begin, const char * end)
+{
+    if(this->sep)free(this->sep);
+    //copy sep into rec io
+    size_t len = end - begin;
+    if(len>MAX_SEPARATOR_LENGTH)return;
+    this->sep = malloc(len+1);
+    if(!this->sep)return;//if mem boom
+    memcpy(this->sep,begin,len);
+    this->sep[len] = '\0';
     this->len = len;
-    this->separator = malloc(len+1);
-    memcpy(this->separator,begin,len);
-    this->separator[len] = '\0';
 }
 
-int tokenizer(struct rec_io* this){
-    int count = 0;
-    char* start = this->itr;
-    int len = this->len;
-    while(this->index <this->size){
-        if(this->index+len <this->size &&strncmp(this->separator,this->itr,len)==0){
-            memcpy(tokens[count],start,this->itr-start);
-            tokens[count][this->itr-start] = '\0';
-            tokens_len[count] = this->itr-start;
-            count +=1;
-            this->itr+=len;
-            this->index+=len;
-            start = this->itr;
+
+int tokenizer(struct rec_io * r,const char* begin,const char* end)
+{
+    size_t sep_len = 0;
+    int res = 0;
+    char* sep = NULL;
+    if(r->sep) 
+    {
+        sep = r->sep;
+        sep_len = r->len;
+    }
+    else 
+    {
+        sep = def_sep;
+        sep_len =1;
+    }
+    
+
+    const char* start = begin;
+    while(begin<end)
+    {
+        if(strncmp(begin,sep,sep_len)==0)
+        {
+            if(r->size>=r->capacity)tokens_realloc(r);
+            r->tokens[r->size].begin = start;
+            r->tokens[r->size].end = begin;
+            r->size++;
+            res++;
+            begin+=sep_len;
+            start = begin;
         }
-        else{
-            this->itr++;
-            this->index++;
+        else
+        {
+            begin++;
         }
     }
     //handle orphan
-    memcpy(tokens[count],start,this->itr-start);
-    tokens[count][this->itr-start] = '\0';
-    tokens_len[count] = this->itr-start;
-    return (count+1);
-}
-
-
-int rec_io_read_record(struct rec_io* this,const char* begin,const char* end){
-    if(!this)return -1;
-    int len = end - begin;
-    if(len > MAX_RECORD_LENGTH)return -1;
-    if(len == 0){
-        this -> text = "";
-        return 0;
+    if(begin>start)
+    {
+        if(r->size>=r->capacity)tokens_realloc(r);
+        r->tokens[r->size].begin = start;
+        r->tokens[r->size].end = begin;
+        r->size++;
+        res++;
     }
-    this->text = malloc(len+1);
-    memcpy(this->text,begin,len);
-    this->text[len] = '\0';
-    this->index = 0;
-    this-> size = len ;
-    this->itr = this->text;
-    int count = tokenizer(this);
-    return count;
+    if(res==0)return res+1;
+    return res;
 }
 
 
-size_t rec_io_write_record(struct rec_io *this,char*out,size_t maxlen,const char* format){
+int rec_io_read_record(struct rec_io * this, const char * begin, const char * end)
+{
+    //reset token count
+    this -> size = 0;
+
+    //check length
+    size_t len = end-begin;
+    if(len>MAX_RECORD_LENGTH)return 0;
+
+    
+    int res = 0;
+    //do tokenize,if has seprator ,pass it otherwise use default separator
+    res = tokenizer(this,begin,end);
+    return res;
+}
+
+size_t rec_io_write_record(struct rec_io * this,
+				  char * out, size_t maxlen, const char * format)
+{
+
+    //result
+    size_t count = 0;
+
+    //read format and write in out
+    const char* read = format;
     char* write = out;
-    int count = 0;
-    while(*format){
-        //need copy token to replace %number
-        if(*format == '%'){
-            const char* start = format;
-            format++;
-            while(isdigit((unsigned char)*format)){
-                format++;
+
+    //read loop
+    while(*read)
+    {
+        if(*read == '%')
+        {
+            //find the target string and write it to out
+            int index = *(read+1)-'0';
+            //example
+            // index = 0, tokencount = 0,not valid
+            if(this->size>index)
+            {
+            const char* begin = this->tokens[index].begin;
+            const char* end = this->tokens[index].end;
+            while(begin<end)
+                {
+                    if(count<maxlen)
+                    {
+                        *write++ = *begin++;
+                        count++;
+                    }
+                    else
+                    {
+                        *write = '\0';
+                        return count;
+                    }
+                }
             }
-            //now format point to position which is not number
-            const char* start_of_number = start +1;
-            int num_len = format-start_of_number;
-            //open a buffer store the index
-            char buffer[10];
-            memcpy(buffer,start_of_number,num_len);
-            buffer[num_len] = '\0';
-
-            //find it in tokens
-            int index = atoi(buffer);
-            char* token = tokens[index];
-            int token_len = tokens_len[index];
-
-            //format this token to out
-            if(count + token_len >= maxlen){
+            //now read is still in #,+=2
+            read+=2;
+        }
+        //dont have replacement, directly write in out 
+        else
+        {
+            if(count<maxlen)
+            {
+                *write ++ = *read++;
+                count++;
+            }
+            else
+            {
+                *write = '\0';
                 return count;
             }
-            memcpy(write,token,token_len);
-            write += token_len;    
-            count += token_len;  
         }
-        //else
-        else{
-            if(count+1 >= maxlen){
-                return count;
-            }
-            *write ++ = *format++;
-            count ++;
-        }
-
     }
     *write = '\0';
     return count;
 }
+

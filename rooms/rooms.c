@@ -63,6 +63,9 @@ void clear()
         }
     }
     free(table);
+    table = NULL;
+    size = 0;
+    capacity = 0;
 }
 
 void add_rooms(const struct room* begin,const struct room* end)
@@ -122,7 +125,7 @@ int make_reservation(struct room * r, struct schedule * t, const char * event)
         int match = 1;
         if(r->capacity!=ANY_CAPACITY && r->capacity > table[i].capacity)match = 0;
         if(r->number!=ANY_ROOM_NUMBER && r->number != table[i].number)match = 0;
-        if(r->floor!=ANY_FLOOR && r->floor > table[i].floor)match = 0;
+        if(r->floor!=ANY_FLOOR && r->floor != table[i].floor)match = 0;
         if(match)filter[count++] = table[i];
     }
     qsort(filter,count,sizeof(struct room_info),compare_func);
@@ -145,18 +148,18 @@ int make_reservation(struct room * r, struct schedule * t, const char * event)
                 r->number = filter[i].number;
                 struct room_info* real_room = find_helper(r->floor,r->number);
                 struct reservation* new = malloc(sizeof(struct reservation));
-                if(!new)return 0;
+                if(!new)return -1;
                 new->start =s;
                 new->finish = real_finish;
                 new->event = strdup(event);
-                if(!new->event)return 0;
+                if(!new->event)return -1;
                 new->next = real_room->head;
                 real_room->head = new;
                 return 1;
             }
         }
     }
-    return -1;  
+    return 0;  
 }
 
 int cancel_reservation(int floor, int number, int start)
@@ -173,6 +176,7 @@ int cancel_reservation(int floor, int number, int start)
             itr->next = itr->next->next;
             if(tmp->event)free(tmp->event);
             free(tmp);
+            target->head = dummy.next;
             return 1;
         }
         else
@@ -210,13 +214,13 @@ void print_schedule(FILE * output,
     {
         int match = 1;
         if(number!=ANY_ROOM_NUMBER && number != table[i].number)match = 0;
-        if(floor!=ANY_FLOOR && floor > table[i].floor)match = 0;
+        if(floor!=ANY_FLOOR && floor !=table[i].floor)match = 0;
         if(match)filter[count++] = table[i];
     }
     qsort(filter,count,sizeof(struct room_info),compare_func_v2);
     for(int i =0;i<count;i++)
     {
-        fprintf(output,"room %d floor %d\n",filter[i].number,filter[i].floor);
+        fprintf(output,"room %d floor %d:\n",filter[i].number,filter[i].floor);
         struct reservation* itr = filter[i].head;
         struct reservation arr[1000];
         int size = 0;
@@ -233,7 +237,7 @@ void print_schedule(FILE * output,
             qsort(arr,size,sizeof(struct reservation),compare_func_v3);
             for(int i=0;i<size;i++)
             {
-                fprintf(output,"event: %d %d %s\n",arr[i].start,arr[i].finish,arr[i].event);
+                fprintf(output,"event %d %d %s\n",arr[i].start,arr[i].finish,arr[i].event);
             }
         }
     }
